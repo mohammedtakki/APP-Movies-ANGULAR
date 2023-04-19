@@ -3,14 +3,36 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
+import { MoviesComponent } from './pages/movies/movies.component';
+import { TvComponent } from './pages/tv/tv.component';
+import { CategoriesComponent } from './pages/categories/categories.component';
+import {HttpClientModule} from '@angular/common/http';
+import { SliderComponent } from './components/slider/slider.component';
+import { CardComponent } from './components/card/card.component';
+import { DetailsComponent } from './components/details/details.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    MoviesComponent,
+    TvComponent,
+    CategoriesComponent,
+    SliderComponent,
+    CardComponent,
+    DetailsComponent,
+    
+     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

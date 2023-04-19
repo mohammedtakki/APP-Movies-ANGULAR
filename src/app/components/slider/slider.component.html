@@ -1,0 +1,24 @@
+<div id="carouselExampleDark"  class="carousel carousel-dark slide">
+  
+    <div class="carousel-inner">
+      <div class="carousel-item " [ngClass]="{'active':f}" data-bs-interval="5000" *ngFor="let item of items;first as f">
+        <img [src]="'https://image.tmdb.org/t/p/original'+item.backdrop_path"  class="d-block w-100" [alt]="item.original_title">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>{{item.original_title}}</h5>
+          <p>{{item.overview}}</p>
+        </div>
+      </div>
+      
+     
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    
+    
+  </div>

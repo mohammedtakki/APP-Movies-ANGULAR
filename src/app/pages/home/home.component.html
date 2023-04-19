@@ -1,0 +1,26 @@
+<div >
+    <div class="row">
+<app-slider [items]="UpComingMovies"></app-slider>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="my-5 text-center">Popular Movies </h3>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-2 col-lg-2 col-sm-4" *ngFor="let movie of Popular" >
+
+        <app-card [item]="movie"></app-card>
+    </div>
+</div>
+
+
+
+
+
+
+
+</div>
+
